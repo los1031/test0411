@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header id="navigation">
+            <a href="#" class="logo">
+                <img src="./img/logo.jpg" alt="" class="my">
+            </a>
+        </header>
+        <div class="content logo">
+            <div class="textBox">
+                <h2>저는 시각디자인과에 재학중인<br><span>안태훈</span>입니다.</h2>
+                <p>I am a in the department of university visual communication design I'm Tae Hoon Ahn.</p>
+            </div>
+            <div class="imgBox">
+                <img src="./img/logo1.jpg" alt="img1" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./img/thumb1.jpg" alt="" onclick="imgSlider('./img/logo1.jpg'); changeCircleColor('#7897e4')" class="sim"></li>
+            <li><img src="./img/thumb2.jpg" alt="" onclick="imgSlider('./img/kakao.jpg'); changeCircleColor('#f6ff97')" class="kakao"></li>
+            <li><img src="./img/thumb3.jpg" alt="" onclick="imgSlider('./img/insta.jpg'); changeCircleColor('#ffc1f0')" class="insta"></li>
+        </ul>
+
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+     
+</body>
+</html>
