@@ -6,6 +6,11 @@
 .my {
     border-radius: 50%;
 }
+body {
+    width: 1240px;
+    margin: 0 auto 50px;
+    display: flex;
+}
 section {
     position: relative;
     width: 100%;
@@ -13,7 +18,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background-color: antiquewhite;
+    /* background: #fff; */
 }
 header {
     position: absolute;
@@ -34,12 +40,17 @@ header {
 }
 .content .textBox {
     position: relative;
-    max-width: 600px;
+    max-width: 920px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 10px 30px 20px 30px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
 }
 .content .textBox h2 {
     font-size: 2.6em;
     line-height: 1.4em;
     font-weight: 500;
+    margin-bottom: 5%;
 }
 .content .textBox h2 span {
     color: #7897e4;
